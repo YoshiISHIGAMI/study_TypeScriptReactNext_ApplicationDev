@@ -1,0 +1,2 @@
+# study_TypeScriptReactNext_ApplicationDev
+TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発
