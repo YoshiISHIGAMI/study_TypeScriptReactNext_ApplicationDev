@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const TitleContext = React.createContext('')
 
@@ -13,19 +13,19 @@ const Title = () => {
 }
 
 const Header = () => {
-  return(
+  return (
     <div>
       <Title />
     </div>
   )
 }
 
-const Page =()=> {
+const Page = () => {
   const title = 'React Book'
 
   return (
     <TitleContext.Provider value={title}>
-      <Header/>
+      <Header />
     </TitleContext.Provider>
   )
 }

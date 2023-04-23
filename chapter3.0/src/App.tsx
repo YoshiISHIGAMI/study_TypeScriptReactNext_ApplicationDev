@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Page from './components/ContextSample';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Parent from './components/Parent'
 
 function App() {
   return (
@@ -20,9 +20,11 @@ function App() {
           Learn React
         </a>
       </header>
-      <Page/>
+      <div className="test">
+        <Parent />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
