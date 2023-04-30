@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Parent from './components/Parent'
+import Clock from './components/Clock'
 
 function App() {
   return (
@@ -21,7 +21,9 @@ function App() {
         </a>
       </header>
       <div className="test">
-        <Parent />
+        {/* <Parent /> */}
+        {/* <UseMemoSample /> */}
+        <Clock />
       </div>
     </div>
   )
