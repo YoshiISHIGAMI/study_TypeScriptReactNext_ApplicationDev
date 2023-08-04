@@ -31,7 +31,7 @@ const Counter = (props: CounterProps) => {
       <button onClick={() => dispatch('DECREMENT')}>-</button>
       <button onClick={() => dispatch('INCREMENT')}>+</button>
       <button onClick={() => dispatch('DOUBLE')}>*2</button>
-      <button onClick={() => dispatch('RESET')}></button>
+      <button onClick={() => dispatch('RESET')}>Reset</button>
     </div>
   )
 }

@@ -2,6 +2,9 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import Clock from './components/Clock'
+import Parent from './components/ContextSample2'
+import ImageUploader from './components/RefSample'
+import Counter from './components/ReducerSample'
 
 function App() {
   return (
@@ -23,7 +26,9 @@ function App() {
       <div className="test">
         {/* <Parent /> */}
         {/* <UseMemoSample /> */}
-        <Clock />
+        {/* <Clock /> */}
+        {/* <Parent /> */}
+        <Counter initialValue={0} />
       </div>
     </div>
   )
