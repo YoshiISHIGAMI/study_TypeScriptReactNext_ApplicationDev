@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 // タイマーが呼び出される周期を1秒にする
 const UPDATE_CYCLE = 1000
@@ -58,7 +58,7 @@ export const Clock = () => {
     <div>
       <p>
         <span id="current-time-label">現在時刻</span>
-        <span>: {timestamp.toLocaleString(locale)}</span>
+        <span>: {timestamp.toLocaleString(locale)} </span>
         <select value={locale} onChange={(e) => seLocale(getLocaleFromString(e.target.value))}>
           <option value="en-US">en-US</option>
           <option value="ja-JP">ja-JP</option>
