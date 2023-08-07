@@ -5,6 +5,7 @@ import Clock from './components/Clock'
 import Parent from './components/ContextSample2'
 import ImageUploader from './components/RefSample'
 import Counter from './components/ReducerSample'
+import CounterUseCallbackTest1 from './components/UseCallbackTest1'
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
         {/* <UseMemoSample /> */}
         {/* <Clock /> */}
         {/* <Parent /> */}
-        <Counter initialValue={0} />
+        {/* <Counter initialValue={0} /> */}
+        <CounterUseCallbackTest1 />
       </div>
     </div>
   )
