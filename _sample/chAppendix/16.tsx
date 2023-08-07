@@ -1,0 +1,1 @@
+<img src="/products/books/red-book.png" alt="YOU ARE YOUR ONLY LIMITの商品画像" />

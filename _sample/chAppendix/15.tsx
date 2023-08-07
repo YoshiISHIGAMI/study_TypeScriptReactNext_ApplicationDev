@@ -1,0 +1,1 @@
+<img src="/products/books/red-book.png" alt="商品画像" />
