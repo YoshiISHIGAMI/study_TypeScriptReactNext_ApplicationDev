@@ -1,11 +1,11 @@
-import { NextPage, GetStaticProps } from 'next'
-import Head from 'next/head'
+import { NextPage, GetStaticProps } from "next";
+import Head from "next/head";
 
 const EnvSample: NextPage = (props) => {
   // サーバーサイドで描画する時は'test1'と表示され、クライアントサイドで再描画する時はundefinedと表示される
-  console.log('process.env.TEST', process.env.TEST)
+  console.log("process.env.TEST", process.env.TEST);
   // 'test2'と表示される
-  console.log('process.env.NEXT_PUBLIC_TEST', process.env.NEXT_PUBLIC_TEST)
+  console.log("process.env.NEXT_PUBLIC_TEST", process.env.NEXT_PUBLIC_TEST);
 
   return (
     <div>
@@ -20,21 +20,19 @@ const EnvSample: NextPage = (props) => {
         <p>{process.env.NEXT_PUBLIC_TEST}</p>
       </main>
     </div>
-  )
-}
+  );
+};
 
 // getStaticPropsは常にサーバーサイドで実行されるので、すべての環境変数を参照できる
 export const getStaticProps: GetStaticProps = async (context) => {
   // 'test1'が表示される
-  console.log('process.env.TEST', process.env.TEST)
+  console.log("process.env.TEST", process.env.TEST);
   // 'test2'が表示される
-  console.log('process.env.NEXT_PUBLIC_TEST', process.env.NEXT_PUBLIC_TEST)
+  console.log("process.env.NEXT_PUBLIC_TEST", process.env.NEXT_PUBLIC_TEST);
 
   return {
-    props: {
+    props: {},
+  };
+};
 
-    },
-  }
-}
-
-export default EnvSample
+export default EnvSample;

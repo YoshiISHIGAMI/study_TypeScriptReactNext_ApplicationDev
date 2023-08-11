@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
-import Image from 'next/image'
+import { NextPage } from "next";
+import Image from "next/image";
 // 画像ファイルをインポートする
-import BibleImage from '../public/images/bible.jpeg'
+import BibleImage from "../public/images/bible.jpeg";
 
 const ImageSample: NextPage<void> = (props) => {
   return (
@@ -13,10 +13,10 @@ const ImageSample: NextPage<void> = (props) => {
       <p>Imageコンポーネントで表示した場合</p>
       {/* Imageコンポーネントを使用して表示 */}
       {/* パスを指定する代わりに、インポートした画像を指定 */}
-      <Image src={BibleImage} />
+      <Image src={BibleImage} layout={"responsive"} placeholder={"blur"} />
       <p>Imageで表示した場合は事前に描画エリアが確保されます</p>
     </div>
-  )
-}
+  );
+};
 
-export default ImageSample
+export default ImageSample;
