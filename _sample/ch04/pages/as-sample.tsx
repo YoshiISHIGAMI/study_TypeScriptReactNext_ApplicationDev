@@ -1,11 +1,11 @@
-import { NextPage } from 'next'
-import styled from 'styled-components'
+import { NextPage } from "next";
+import styled from "styled-components";
 
 // 青色のテキストを表示するコンポーネント
 const Text = styled.p`
   color: #1e90ff;
   font-size: 2em;
-`
+`;
 
 const Page: NextPage = () => {
   return (
@@ -17,7 +17,7 @@ const Page: NextPage = () => {
         Go to index
       </Text>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

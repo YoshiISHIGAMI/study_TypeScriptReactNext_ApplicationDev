@@ -1,5 +1,5 @@
-import { NextPage } from 'next'
-import styled from 'styled-components'
+import { NextPage } from "next";
+import styled from "styled-components";
 
 // span要素にスタイルを適用したコンポーネント
 const Badge = styled.span`
@@ -9,10 +9,10 @@ const Badge = styled.span`
   color: white;
   background: red;
   border-radius: 16px;
-`
+`;
 
 const Page: NextPage = () => {
-  return <Badge>Hello World!</Badge>
-}
+  return <Badge>Hello World!</Badge>;
+};
 
-export default Page
+export default Page;
