@@ -1,31 +1,36 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 const variants = {
   primary: {
-    color: '#ffffff',
-    backgroundColor: '#1D3461',
-    border: 'none',
+    color: "#ffffff",
+    backgroundColor: "#1D3461",
+    border: "none",
   },
   success: {
-    color: '#ffffff',
-    backgroundColor: '#5AB203',
-    border: 'none',
+    color: "#ffffff",
+    backgroundColor: "#5AB203",
+    border: "none",
   },
   transparent: {
-    color: '#111111',
-    backgroundColor: 'transparent',
-    border: '1px solid black',
+    color: "#111111",
+    backgroundColor: "transparent",
+    border: "1px solid black",
   },
-} as const
+  disable: {
+    color: "#999",
+    backgroundColor: "#eee",
+    border: "none",
+  },
+} as const;
 
 export type StyledButtonProps = {
-  variant: keyof typeof variants
-}
+  variant: keyof typeof variants;
+};
 
 export const StyledButton = styled.button<StyledButtonProps>`
   ${({ variant }) => {
     // variantに与えられたキーを元に、対応するスタイルを取得する
-    const style = variants[variant]
+    const style = variants[variant];
 
     // cssを使い、複数のスタイルを返す
     return css`
@@ -45,4 +50,4 @@ export const StyledButton = styled.button<StyledButtonProps>`
   &:focus {
     outline: none;
   }
-`
+`;
